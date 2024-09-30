@@ -1,0 +1,422 @@
+* { /*reset do css*/
+    margin: 0;
+    padding: 0;
+}
+
+/* fundo da pagina*/
+#bodypag1 {
+    margin: 0;
+    padding: 0;
+    height: 400vh;
+    background: linear-gradient(to bottom, #0f0d0d, #333300, #666600);
+
+}
+   
+html {  /* comportamento do scroll*/
+    scroll-behavior: smooth;
+    scroll-padding-top: 20vh;
+}
+
+#menu-horizontal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+}
+
+/* lista nao ordenada - fundo do menu*/
+#menu-horizontal ul {
+    list-style: none;
+    background-color: black;
+    text-align: center;
+}
+
+/* Menu(disposiçãão dos elementos do menu)*/
+#menu-horizontal li {
+      display: inline-block;
+}
+
+/* texto dent*o do menu */
+#menu-horizontal a {
+    font-family: "New Rocker", system-ui;
+    color: yellow;
+    text-decoration: none;
+    padding: 1.5rem; /* distancia */
+    display: inline-block;
+    transition: background 1s;
+    font-size: 1.25rem; 
+
+}
+
+/* fundo da pagina*/
+.tituloprincipal {
+    width: 100%;
+    height: 50rem;
+    background-image: url(./fundocortado.png);
+    background-size: cover;/*contra distorção */
+    background-position: center;
+    background-repeat: no-repeat;/* evitar que a imagem do fundo repita*/
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.titulocentral {  /* apenas o texto dentro da imagem principal 1pagina */
+    color: yellow;
+    font-family: "New Rocker", system-ui;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase; 
+
+}
+
+.titulodesessao {
+    text-transform: uppercase;
+    color: yellow;
+    font-family: "New Rocker", system-ui;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+}
+
+.paragrafo{ /* para todos os paragrafos*/
+    color: white;
+    font-family: "New Rocker", system-ui;
+    font-size: medium;
+    text-align: center;
+}
+
+
+#sessaomenu {  /* tamanho da sessaomenu*/
+   width: 100%;
+   height: 100vh;
+   
+}
+
+.sloganpag1 {/*arredondando os slogas*/
+    border-radius: 20%;
+}
+
+
+
+#sessaohistoria {
+    margin-top: 10rem;
+    width: 100%;
+    height: 40vh ;   
+}
+
+#paragrafosessaohistoria{
+    text-align: justify ;
+    font-size: 1.25rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+}
+
+
+#sessaobandas{
+    margin-top: 25rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 40vh ;
+}
+#sloganbandas {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+
+}
+#buttonslogan {/*centralizando o botao*/
+    margin-left: 46%;
+    margin-top: 3rem;
+}
+
+
+
+#sessaosobre{
+    margin-top: 20rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 20vh ;
+}
+#sobre {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1.25rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
+}
+#paragrafosobre{
+    text-align: right;
+    font-size: 1.25rem;
+    margin-bottom: 5rem;
+}
+
+#imagemsobre{
+    border-radius: 50%;
+    margin-bottom: 4rem;
+}
+
+#botaotopo{
+    margin-left: 48%;
+    margin-top: 1rem;
+}
+
+.botao-custom{
+    font-family: "New Rocker", system-ui;
+    background-color: black; 
+    border: 2px solid yellow; 
+    color: yellow;
+    padding: 0.65rem 1.25rem; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    border-radius: 5px;  
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+.custom-button:hover {
+    background-color: #333;
+}
+
+/*PAGINA 2 - CSS*/
+#bodypag2{
+    margin: 0;
+    padding: 0;
+    height: 500vh;
+    background: linear-gradient(to bottom, #0f0d0d, #333300, #666600);
+}
+#htmlpag2{
+    scroll-behavior: smooth;
+    scroll-padding: 13vh;
+}
+/* fundo da pagina*/
+.tituloprincipalalbum{
+    width: 100%;
+    height: 50rem;
+    background-image: url(./fundoalbum.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+#titulocentralalbum{
+    color: white;
+    font-family: "New Rocker", system-ui;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    flex-direction: row;
+    padding: 1.5rem;
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+#sessaoanthrax{
+    margin-top: 3rem;
+}
+
+.albumsmargempag2{
+    margin-top: 10rem;
+}
+.slogan{
+    border-radius: 20%;
+}
+.card{
+    color: white;
+    font-family: "New Rocker", system-ui;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.imagemlink{
+    border-radius: 50%;
+}
+
+.descricaoalbums{
+    color: white;
+    font-family: "New Rocker", system-ui;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    
+}
+#botaotopopag2{
+    font-family: "New Rocker", system-ui;
+    margin-left: 48%;
+    margin-top: 5rem;
+    text-decoration: none;
+}
+
+
+/*resposividade*/
+/* Resolução de tablets - até 768px */
+@media (max-width: 768px) {
+   
+    #bodypag1{
+        height: 300vh;
+    }
+    .tituloprincipal{
+        height: 55rem;
+    }
+    #paragrafosessaohistoria{
+        font-size: 0.9rem;
+    }
+    #sessaohistoria{
+        margin-top: 0.3rem;
+    }
+
+    #sobre{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    #sessaosobre{
+        margin-top: 2rem;
+        margin-bottom: 100rem;
+    }
+    #buttonslogan{
+        margin-left: 40%;
+    }
+    #botaotopo{
+        margin-left: 43%;
+    }
+    #bodypag2{
+        height: 300vh;
+    }
+  
+    .tituloprincipalalbum {
+        height: 50rem;
+    }
+
+    #titulocentralalbum {
+        font-size: 1rem;
+        margin-left: 10%;
+        margin-right: 10%;
+    } 
+    /* Ajuste nas imagens e textos */
+    .slogan {
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .descricaoalbums{
+        font-size: 1rem;
+    }
+
+    /* Layout de uma coluna para smartphones */
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3,200px);
+        justify-content: center;
+        padding: 1rem;
+        gap: 1.5rem;
+        margin: 1rem;
+    }
+    #botaotopopag2{
+        margin-bottom: 4rem;
+        margin-left: 44%;
+    }
+  
+}
+
+/* Smartphones  (até 480px) */
+@media (max-width: 480px) {
+
+    #bodypag1{
+        height: 280vh;
+    }
+    #paragrafosessaohistoria{
+        font-size: 0.65rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    #sessaohistoria{
+        margin-top: 0.3rem;
+    }
+
+    #sloganbandas{
+        gap: 1rem;
+    }
+    #sessaobandas{
+        margin-top: 20rem;
+    }
+
+    #paragrafosobre{
+        font-size: 0.6rem;
+    }
+    #sobre{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    #sessaosobre{
+        margin-top: 0.1rem;
+    }
+    #buttonslogan{
+        margin-left: 32%;
+              
+    }
+
+    /* Tamanho das fontes */
+    #bodypag2{
+        height: 270vh;
+    }
+    
+    .titulocentral {
+        font-size: 1.5rem;
+    }
+
+    .titulodesessao {
+        font-size: 1.25rem;
+    }
+
+    .slogan {
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .descricaoalbums{
+        font-size: 0.5rem;
+    }
+
+    /* Layout de uma coluna para smartphones */
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3,100px);
+        justify-content: center;
+        padding: 1rem;
+        gap: 1.5rem;
+        margin: 1rem;
+    }
+
+    /* Tamanho do botão */
+    #botaotopo, #botaotopopag2 {
+        font-size: 0.75rem;
+        margin-left: 40%;
+    }
+}
